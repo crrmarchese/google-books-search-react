@@ -1,0 +1,7 @@
+.jumbotron .p-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    background-color: var(--cyan-50);
+}

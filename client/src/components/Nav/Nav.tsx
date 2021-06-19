@@ -11,9 +11,9 @@ function Nav() {
     ];
     return (
         <div>
-            <div className="card">
+            <nav className="nav card">
                 <Menubar model={items} start={start} />
-            </div>
+            </nav>
         </div>
     )
 }

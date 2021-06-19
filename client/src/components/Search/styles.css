@@ -1,0 +1,10 @@
+.p-button.gb-btn-search {
+    background: rgba(255, 206, 13);
+    color: #333;
+}
+
+.p-button.gb-btn-search:not(a):not(.p-disabled):hover {
+    color: #333;
+    background: rgba(248, 198, 0);
+
+}

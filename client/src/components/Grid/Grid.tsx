@@ -6,7 +6,7 @@ function Grid() {
     return (
         <div className="p-grid p-container">
             <div className="p-col p-col-align-start">
-                <h3>Book Search</h3>
+                <h2>Book Search</h2>
                 <Search />
             </div>
         </div>

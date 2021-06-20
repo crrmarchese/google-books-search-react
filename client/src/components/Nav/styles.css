@@ -21,6 +21,17 @@ nav.card {
 .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
     color: inherit !important;
 }
+
 .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:not(.p-disabled):hover {
     background: var(--orange-500) !important;
+}
+
+@media screen and (max-width: 960px) {
+    .nav .p-menubar .p-menubar-root-list {
+        background: var(--cyan-600);
+    }
+    .nav .p-menubar .p-menubar-button,
+    .nav .p-menubar .p-menubar-button:hover {
+        color: var(--surface-0);
+    }  
 }

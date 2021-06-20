@@ -4,7 +4,7 @@ import './styles.css';
 
 function SearchResults() {
     return (
-        <div className="p-grid p-container">
+        <div className="results-section p-grid p-container">
             <div className="p-col-12">
                 <div className="search-results card">
                     <div className="p-orderlist p-orderlist-list-container">

@@ -3,7 +3,7 @@
 }
 
 .card .p-orderlist .p-orderlist-header {
-    background: var(--yellow-100);
+    background: rgba(247, 249, 249, .35);
     color: #495057;
     border: 1px solid #dee2e6;
     border-bottom-color: rgb(222, 226, 230);
@@ -14,4 +14,5 @@
     border-bottom: 0 none;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
+    width: 100%;
 }

@@ -1,0 +1,16 @@
+.product-item {
+    display: flex;
+}
+
+.product-list-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product-list-action .p-button{
+    margin-right: .5rem;
+}
+
+.product-list-action .p-button:last-of-type {
+    margin-right: 0;
+}

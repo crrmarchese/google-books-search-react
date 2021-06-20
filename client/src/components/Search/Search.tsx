@@ -11,7 +11,7 @@ function Search() {
                     <InputText id="bookname" type="text"/>
             </div>
             <div className="p-d-flex p-jc-end">
-                    <Button label="Search" className="gb-btn-search" />
+                    <Button label="Search" icon="pi pi-search" className="gb-btn-search" />
             </div>
         </div>
     )

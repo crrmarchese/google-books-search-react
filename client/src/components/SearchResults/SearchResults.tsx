@@ -1,5 +1,5 @@
 import React from 'react';
-import ResultsList from '../ResultsList/ResultsList';
+import List from '../List/List';
 import './styles.css';
 
 function SearchResults() {
@@ -12,7 +12,7 @@ function SearchResults() {
                             <h2>Results</h2>      
                         </div>
                     </div> 
-                    <ResultsList />
+                    <List />
                 </div>
                 
             </div>

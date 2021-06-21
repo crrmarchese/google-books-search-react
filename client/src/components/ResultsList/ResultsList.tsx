@@ -1,6 +1,7 @@
 import React from 'react';
 import { OrderList } from 'primereact/orderlist';
-import { Button } from 'primereact/button';
+import ViewBtn from '../Button/ViewBtn';
+import SaveBtn from '../Button/SaveBtn';
 import './styles.css';
 
 function ResultsList() {
@@ -20,8 +21,8 @@ function ResultsList() {
                             </div>
                             <div className="p-col-4">
                                 <div className="product-list-action">
-                                    <Button label="View" icon="pi pi-eye" />
-                                    <Button label="Save" icon="pi pi-save" />
+                                    <ViewBtn />
+                                    <SaveBtn />
                                 </div>
                             </div>
                             <div className="p-col-2">

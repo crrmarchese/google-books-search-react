@@ -4,7 +4,7 @@ import ViewBtn from '../Button/ViewBtn';
 import SaveBtn from '../Button/SaveBtn';
 import './styles.css';
 
-function ResultsList() {
+function List() {
     return (
         <div className="search-results-list">
             <ul className="p-orderlist-list">
@@ -45,5 +45,5 @@ function ResultsList() {
     )
 }
 
-export default ResultsList
+export default List
 

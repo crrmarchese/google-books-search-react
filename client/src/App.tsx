@@ -1,8 +1,6 @@
 import React from 'react';
 import Nav from "./components/Nav/Nav";
-import Jumbotron from './components/Jumbotron/Jumbotron';
-import Grid from './components/Grid/Grid';
-import SearchResults from './components/SearchResults/SearchResults'
+import SearchBooks from './views/SearchBooks';
 
 // Prime React Library
 import 'primereact/resources/themes/md-light-indigo/theme.css'
@@ -14,9 +12,7 @@ function App() {
   return (
        <div className="App">
         <Nav />
-        <Jumbotron />
-        <Grid />
-        <SearchResults />
+        <SearchBooks />
       </div>
   );
 }

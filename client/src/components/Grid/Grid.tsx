@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from '../Search/Search'
+import SearchBar from '../SearchBar/SearchBar'
 import './styles.css';
 
 function Grid() {
@@ -7,7 +7,7 @@ function Grid() {
         <div className="p-grid p-container">
             <div className="p-col p-col-align-start">
                 <h2>Book Search</h2>
-                <Search />
+                <SearchBar />
             </div>
         </div>
     )

@@ -1,14 +1,14 @@
 import React from 'react';
 import Jumbotron from '../components/Jumbotron/Jumbotron';
 import Grid from '../components/Grid/Grid';
-import SearchResults from '../components/SearchResults/SearchResults';
+import BookDataHeader from '../components/BookDataHeader/BookDataHeader';
 
 function SearchBooks() {
     return (
         <div>
             <Jumbotron />
             <Grid />
-            <SearchResults /> 
+            <BookDataHeader /> 
         </div>
     )
 }

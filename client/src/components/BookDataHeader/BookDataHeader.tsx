@@ -2,7 +2,7 @@ import React from 'react';
 import List from '../List/List';
 import './styles.css';
 
-function SearchResults() {
+function BookDataHeader() {
     return (
         <div className="results-section p-grid p-container">
             <div className="p-col-12">
@@ -20,6 +20,6 @@ function SearchResults() {
     )
 }
 
-export default SearchResults
+export default BookDataHeader
 
 

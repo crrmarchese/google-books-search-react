@@ -3,7 +3,7 @@ import {InputText} from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import "./styles.css";
 
-function Search() {
+function SearchBar() {
     return (
         <div>
             <div className="p-field p-fluid">
@@ -17,4 +17,4 @@ function Search() {
     )
 }
 
-export default Search
+export default SearchBar

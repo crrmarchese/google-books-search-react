@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from "./components/Nav/Nav";
 import SearchBooks from './views/SearchBooks';
+import SavedBooks from './views/SavedBooks';
 
 // Prime React Library
 import 'primereact/resources/themes/md-light-indigo/theme.css'

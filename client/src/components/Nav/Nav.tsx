@@ -6,8 +6,8 @@ function Nav() {
     const start = 'Google Books';
 
     const items = [
-        {label: 'Search', icon: 'pi pi-fw pi-search'},
-        {label: 'Saved', icon: 'pi pi-fw pi-save'},
+        {label: 'Search', icon: 'pi pi-fw pi-search', url: '/'},
+        {label: 'Saved', icon: 'pi pi-fw pi-save', url: '/save'},
     ];
     return (
         <>

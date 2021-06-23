@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from "./components/Nav/Nav";
 import SearchBooks from './views/SearchBooks';
 import SavedBooks from './views/SavedBooks';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Prime React Library
 import 'primereact/resources/themes/md-light-indigo/theme.css'
@@ -11,10 +12,12 @@ import 'primeicons/primeicons.css'
 
 function App() {
   return (
+    <Router>
        <div className="App">
         <Nav />
         <SearchBooks />
       </div>
+    </Router> 
   );
 }
 

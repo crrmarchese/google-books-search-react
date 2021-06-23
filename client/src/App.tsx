@@ -15,7 +15,16 @@ function App() {
     <Router>
        <div className="App">
         <Nav />
-        <SearchBooks />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <SearchBooks />
+            </Route>
+            <Route exact path="/save">
+              <SavedBooks />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router> 
   );

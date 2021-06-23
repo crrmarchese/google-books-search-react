@@ -11,9 +11,11 @@ function Nav() {
     ];
     return (
         <div>
-            <nav className="nav card">
-                <Menubar model={items} start={start} />
-            </nav>
+            <header className="header">
+                <nav className="nav card">
+                    <Menubar model={items} start={start} />
+                </nav>
+            </header>  
         </div>
     )
 }

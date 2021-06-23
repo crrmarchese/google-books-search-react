@@ -10,13 +10,13 @@ function Nav() {
         {label: 'Saved', icon: 'pi pi-fw pi-save'},
     ];
     return (
-        <div>
+        <>
             <header className="header">
                 <nav className="nav card">
                     <Menubar model={items} start={start} />
                 </nav>
             </header>  
-        </div>
+        </>
     )
 }
 

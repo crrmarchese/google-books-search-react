@@ -5,11 +5,11 @@ import BookDataHeader from '../components/BookDataHeader/BookDataHeader';
 
 function SearchBooks() {
     return (
-        <div>
+        <>
             <Jumbotron />
             <Grid />
             <BookDataHeader /> 
-        </div>
+        </>
     )
 }
 

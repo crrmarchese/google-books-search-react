@@ -4,10 +4,10 @@ import BookDataHeader from '../components/BookDataHeader/BookDataHeader';
 
 function SavedBooks() {
     return (
-        <div>
+        <>
             <Jumbotron />
             <BookDataHeader /> 
-        </div>
+        </>
     )
 }
 

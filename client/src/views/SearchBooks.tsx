@@ -8,7 +8,7 @@ function SearchBooks() {
         <>
             <Jumbotron />
             <Grid />
-            <BookDataHeader /> 
+            <BookDataHeader heading="Results" /> 
         </>
     )
 }

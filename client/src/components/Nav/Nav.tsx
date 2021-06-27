@@ -12,7 +12,7 @@ function Nav() {
     return (
         <>
             <header className="header">
-                <nav className="nav card">
+                <nav className="nav card" role="navigation">
                     <Menubar model={items} start={start} />
                 </nav>
             </header>  

@@ -13,3 +13,11 @@
 .search-results-list .p-button:not(a):not(.p-disabled):hover {
     background: #00899b;
 }
+
+.p-button.btn-delete {
+    background: #dd2c00;
+}
+
+.p-button.btn-delete:not(a):not(.p-disabled):hover {
+    background: #d32F2F;
+}

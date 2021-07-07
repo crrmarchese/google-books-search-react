@@ -2,9 +2,14 @@ import React from 'react';
 // import { OrderList } from 'primereact/orderlist';
 import ViewBtn from '../Button/ViewBtn';
 import SaveBtn from '../Button/SaveBtn';
+import DeleteBtn from '../Button/DeleteBtn';
 import './styles.css';
 
-function List() {
+export interface IProps {
+    btntype: string;
+}
+
+function List({btntype}:IProps) {
     return (
         <div className="search-results-list">
             <ul className="p-orderlist-list">
@@ -23,6 +28,8 @@ function List() {
                                 <div className="product-list-action">
                                     <ViewBtn />
                                     <SaveBtn />
+                                    <DeleteBtn />
+                                    <p>{btntype}</p>
                                 </div>
                             </div>
                             <div className="p-col-2">

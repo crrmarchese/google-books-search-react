@@ -6,7 +6,7 @@ function SavedBooks() {
     return (
         <>
             <Jumbotron />
-            <BookDataHeader heading="Saved Books" /> 
+            <BookDataHeader heading="Saved Books" btntype="delete" /> 
         </>
     )
 }

@@ -1,15 +1,10 @@
 import React from 'react';
 // import { OrderList } from 'primereact/orderlist';
-import ViewBtn from '../Button/ViewBtn';
-import SaveBtn from '../Button/SaveBtn';
-import DeleteBtn from '../Button/DeleteBtn';
+import CustomButton from '../Button/CustomButton';
 import './styles.css';
 
-export interface IProps {
-    btntype: string;
-}
 
-function List({btntype}:IProps) {
+function List({btntype, iconName}) {
     return (
         <div className="search-results-list">
             <ul className="p-orderlist-list">
@@ -26,10 +21,9 @@ function List({btntype}:IProps) {
                             </div>
                             <div className="p-col-4">
                                 <div className="product-list-action">
-                                    <ViewBtn />
-                                    <SaveBtn />
-                                    <DeleteBtn />
-                                    <p>{btntype}</p>
+                                    <CustomButton btntype="View" iconName="pi pi-eye" />
+                                    <CustomButton btntype={btntype} iconName={iconName} />
+                    
                                 </div>
                             </div>
                             <div className="p-col-2">

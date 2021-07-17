@@ -2,12 +2,8 @@ import React from 'react';
 import List from '../List/List';
 import './styles.css';
 
-export interface IProps {
-    heading: string;
-    btntype: string;
-}
 
-function BookDataHeader({heading, btntype}:IProps) {
+function BookDataHeader({heading, btntype, iconName}) {
     return (
         <div className="results-section p-grid p-container">
             <div className="p-col-12">
@@ -17,7 +13,7 @@ function BookDataHeader({heading, btntype}:IProps) {
                             <h2>{heading}</h2>   
                         </div>
                     </div> 
-                    <List btntype={btntype}/>
+                    <List btntype={btntype} iconName={iconName}/>
                 </div>
                 
             </div>

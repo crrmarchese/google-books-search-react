@@ -1,16 +1,14 @@
 import React from 'react';
 import Jumbotron from '../components/Jumbotron/Jumbotron';
-import Grid from '../components/Grid/Grid';
 import BookDataHeader from '../components/BookDataHeader/BookDataHeader';
 
-function SearchBooks() {
+function SavedBooks() {
     return (
         <>
             <Jumbotron />
-            <Grid />
-            <BookDataHeader heading="Results" btntype="save" /> 
+            <BookDataHeader heading="Saved Books" btntype="Delete" iconName="pi pi-trash" /> 
         </>
     )
 }
 
-export default SearchBooks
+export default SavedBooks

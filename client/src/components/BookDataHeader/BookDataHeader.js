@@ -3,7 +3,7 @@ import List from '../List/List';
 import './styles.css';
 
 
-function BookDataHeader({heading, btntype, iconName}) {
+function BookDataHeader({heading, btntype, iconName, booklist}) {
     return (
         <div className="results-section p-grid p-container">
             <div className="p-col-12">
@@ -13,7 +13,7 @@ function BookDataHeader({heading, btntype, iconName}) {
                             <h2>{heading}</h2>   
                         </div>
                     </div> 
-                    <List btntype={btntype} iconName={iconName}/>
+                    <List btntype={btntype} iconName={iconName} booklist={booklist}/>
                 </div>
                 
             </div>

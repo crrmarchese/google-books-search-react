@@ -2,12 +2,12 @@ import React from 'react';
 import SearchBar from '../SearchBar/SearchBar'
 import './styles.css';
 
-function Grid() {
+function Grid({searchTerm, handleChange}) {
     return (
         <div className="p-grid p-container">
             <div className="p-col p-col-align-start">
                 <h2>Book Search</h2>
-                <SearchBar />
+                <SearchBar searchTerm={searchTerm} handleChange={handleChange}/>
             </div>
         </div>
     )

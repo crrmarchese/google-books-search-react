@@ -1,7 +1,7 @@
 import axios from "axios";
 
-
-//https://www.googleapis.com/books/v1/volumes?q=javascript
+// proxy key in package.json is used in the URL for the axios methods (8, 12, 16, 20)
+// https://www.googleapis.com/books/v1/volumes?q=javascript
 export default {
   // Gets all books
   getBooks: function() {

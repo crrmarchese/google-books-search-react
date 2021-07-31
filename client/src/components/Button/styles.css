@@ -1,0 +1,27 @@
+.product-list-action .p-button{
+    margin-right: .5rem;
+}
+
+/* .product-list-action .p-button:last-of-type {
+    margin-right: 0;
+} */
+
+.search-results .product-list-action .p-button{
+    background: var(--cyan-600);
+}
+
+.search-results .product-list-action .p-button:not(a):not(.p-disabled):hover {
+    background: #00899b;
+}
+
+.search-results .product-list-action .p-button.btn-delete {
+    background: #dd2c00;
+}
+
+.search-results .product-list-action .p-button.btn-delete:not(a):not(.p-disabled):hover {
+    background: #d32F2F;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'primereact/button';
-import './style.css';
+import './styles.css';
 
 function CustomButton({btntype, iconName, link}) {
     return (

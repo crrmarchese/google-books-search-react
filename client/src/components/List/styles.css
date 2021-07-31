@@ -33,3 +33,9 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.results-list .p-orderlist-list {
+    overflow: unset;
+    min-height: unset;
+    max-height: unset;
+}

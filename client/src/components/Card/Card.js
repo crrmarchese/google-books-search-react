@@ -1,5 +1,7 @@
 import React from 'react';
 import CustomButton from '../Button/CustomButton';
+import './styles.css';
+
 
 function Card({ book, btntype, iconName }) {
     return (
@@ -24,7 +26,7 @@ function Card({ book, btntype, iconName }) {
                     </div>
                     <div className="p-col-2">
                         <div className="image-container">
-                            <img src={book.image} />
+                            <img src={book.image} alt={book.title}/>
                         </div>
                     </div>
                     <div className="p-col-10">

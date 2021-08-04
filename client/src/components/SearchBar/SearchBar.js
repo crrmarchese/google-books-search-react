@@ -3,7 +3,7 @@ import {InputText} from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import "./styles.css";
 
-function SearchBar({searchTerm, handleChange}) {
+function SearchBar({searchTerm, handleChange, searchBook}) {
     return (
         <div>
             <form>
@@ -12,7 +12,7 @@ function SearchBar({searchTerm, handleChange}) {
                         <InputText id="bookname" type="text" value={searchTerm} onChange={(event) => handleChange(event.target.value)}/>
                 </div>
                 <div className="p-d-flex p-jc-end">
-                        <Button label="Search" icon="pi pi-search" className="gb-btn-search" />
+                        <Button label="Search" icon="pi pi-search" className="gb-btn-search" onClick={searchBook} />
                 </div>
             </form>
             

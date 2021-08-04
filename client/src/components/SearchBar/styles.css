@@ -1,4 +1,5 @@
-.p-button.gb-btn-search {
+.p-button.gb-btn-search,
+.p-button.gb-btn-search:not(a):not(.p-disabled):focus {
     background: rgba(255, 206, 13);
     color: #333;
 }

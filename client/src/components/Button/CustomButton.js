@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'primereact/button';
 import './styles.css';
 
-function CustomButton({btntype, iconName, link}) {
+function CustomButton({btntype, iconName, link, btnFunction, id}) {
     return (
         <>
         {btntype === "View" ? (
@@ -10,7 +10,7 @@ function CustomButton({btntype, iconName, link}) {
                <Button label={btntype} icon={iconName} role="button" className={btntype === "Delete" ? "btn-delete" : " "} /> 
             </a>
         ) : (
-                <Button label={btntype} icon={iconName} role="button" className={btntype === "Delete" ? "btn-delete" : " "} />
+                <Button label={btntype} icon={iconName} role="button" className={btntype === "Delete" ? "btn-delete" : " "} onClick={() => btnFunction(id)} />
         )
 
         }

@@ -13,24 +13,28 @@ function SearchBooks() {
 
     // When the form is submitted, use the API.saveBook method to save the book data
     // Then reload books from the database
-    // function handleFormSubmit(event) {
-    //     event.preventDefault();
-    //     if (formObject.title && formObject.author) {
-    //     API.saveBook({
-    //         title: formObject.title,
-    //         author: formObject.author,
-    //         synopsis: formObject.synopsis
-    //     })
-    //         .then(res => console.log(res))
-    //         .catch(err => console.log(err));
-    //     }
-    // };
+    function addBook(book) {
+        
+        API.saveBook(book)
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+    
+    };
+
+    // Search book
+    function searchBook(e) {
+        e.preventDefault();
+        API.searchBook({searchRequest:searchTerm})
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+    
+    };
 
     return (
         <>
             <Jumbotron />
-            <Grid searchTerm={searchTerm} handleChange={setSearchTerm}/>
-            <BookDataHeader heading="Results" btntype="Save" iconName="pi pi-save" booklist={books}/> 
+            <Grid searchTerm={searchTerm} handleChange={setSearchTerm} searchBook={searchBook}/>
+            <BookDataHeader heading="Results" btntype="Save" iconName="pi pi-save" booklist={books} btnFunction={ addBook }/> 
         </>
     )
 }

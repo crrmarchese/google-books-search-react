@@ -35,7 +35,7 @@ function SavedBooks() {
     return (
         <>
             <Jumbotron />
-            <BookDataHeader heading="Saved Books" btntype="Delete" iconName="pi pi-trash" booklist={books} /> 
+            <BookDataHeader heading="Saved Books" btntype="Delete" iconName="pi pi-trash" booklist={books} btnFunction={deleteBook} /> 
         </>
     )
 }

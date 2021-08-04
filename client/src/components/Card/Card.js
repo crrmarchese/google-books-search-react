@@ -3,7 +3,7 @@ import CustomButton from '../Button/CustomButton';
 import './styles.css';
 
 
-function Card({ book, btntype, iconName }) {
+function Card({ book, btntype, iconName, btnFunction }) {
     return (
         <>
         <li className="p-orderlist-item">
@@ -20,7 +20,7 @@ function Card({ book, btntype, iconName }) {
                     <div className="p-col-4">
                         <div className="product-list-action">
                             <CustomButton btntype="View" iconName="pi pi-eye" link={book.link} />
-                            <CustomButton btntype={btntype} iconName={iconName} />
+                            <CustomButton btntype={btntype} iconName={iconName} btnFunction={btnFunction} id={book._id} />
 
                         </div>
                     </div>

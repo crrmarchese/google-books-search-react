@@ -1,14 +1,16 @@
 const router = require("express").Router();
 const bookRoutes = require("./books");
+const axios = require('axios');
 
 // Book routes
 router.use("/books", bookRoutes);
 
 // Search route
 router.post("/search", (req, res) => {
-    const searchRequest = req.body.searchRequest;
-    axios.get(`https://www.googleapis.com/books/v1/volumes?q=${searchRequest}&key=${process.env.BOOK_API_KEY}`)
-    .then(response =>{
+    // console.log(req.body);
+    // const searchRequest = req.body.searchRequest;
+    axios.get(`https://www.googleapis.com/books/v1/volumes?q=${req.body.searchRequest}&key=${process.env.BOOK_API_KEY}`)
+    .then(response => {
         const formattedBooks=response.data.items.map(item => {
             return {
                 title: item.volumeInfo.title,

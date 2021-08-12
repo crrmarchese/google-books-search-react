@@ -6,7 +6,8 @@
     margin-right: 0;
 } */
 
-.search-results .product-list-action .p-button{
+.search-results .product-list-action .p-button,
+.search-results .product-list-action .p-button:focus { 
     background: var(--cyan-600);
 }
 

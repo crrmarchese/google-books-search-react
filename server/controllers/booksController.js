@@ -15,7 +15,7 @@ const booksController = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    console.log(req.body)
+    console.log(req.body, "this is the create function")
     db.Book
       .create(req.body)
       .then(dbBook => res.json(dbBook))

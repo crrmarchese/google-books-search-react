@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Jumbotron from '../components/Jumbotron/Jumbotron';
 import Grid from '../components/Grid/Grid';
 import BookDataHeader from '../components/BookDataHeader/BookDataHeader';
@@ -21,11 +21,13 @@ function SearchBooks() {
     
     };
 
-    // Search book
+    // Search book-when search button is clicked, the searchBook axios function is called 
     function searchBook(e) {
         e.preventDefault();
         API.searchBook({searchRequest:searchTerm})
-            .then(res => console.log(res))
+            .then(res => {
+                setBooks(res.data);
+            })
             .catch(err => console.log(err));
     
     };

@@ -7,9 +7,9 @@ function List({btntype, iconName, booklist, btnFunction}) {
     return (
         <div className="results-list">
             <ul className="p-orderlist-list">
-                    {booklist.map(book => 
+                    {booklist.map(book => (
                         <Card key={book._id} btntype={btntype} iconName={iconName} book={book} btnFunction={btnFunction} />
-                        )
+                        ))
                     }
             </ul>
             

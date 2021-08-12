@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// proxy key in package.json is used in the URL for the axios methods (8, 12, 16, 20)
+// proxy key in package.json is used in the URL for the axios methods (8, 12, 16, 20, 24)
 // https://www.googleapis.com/books/v1/volumes?q=javascript
 export default {
   // Gets all books
@@ -15,13 +15,13 @@ export default {
   deleteBook: function(id) {
     return axios.delete("/api/books/" + id);
   },
-  // Saves a book to the database/
+  // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
   },
-  // Search books
-  searchBook: function(searchRequest) {
-    return axios.post("/api/search", searchRequest);
+  // Search books using Google API
+  searchBook: function(searchItem) {
+    return axios.post("/api/search", searchItem);
   }
 
 };

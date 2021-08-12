@@ -20,7 +20,7 @@ function Card({ book, btntype, iconName, btnFunction }) {
                     <div className="p-col-4">
                         <div className="product-list-action">
                             <CustomButton btntype="View" iconName="pi pi-eye" link={book.link} />
-                            <CustomButton btntype={btntype} iconName={iconName} btnFunction={btnFunction} id={book._id} />
+                            <CustomButton btntype={btntype} iconName={iconName} btnFunction={btnFunction} id={book._id} book={book} />
 
                         </div>
                     </div>

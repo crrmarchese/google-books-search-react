@@ -16,7 +16,7 @@ router.post("/search", (req, res) => {
                 title: item.volumeInfo.title,
                 description: item.volumeInfo.description,
                 authors: item.volumeInfo.authors.join(", "),
-                image: item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : "",
+                image: item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : null,
                 link: item.volumeInfo.infoLink
             }
         })

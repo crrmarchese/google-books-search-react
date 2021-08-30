@@ -11,7 +11,7 @@ function SearchBar({searchTerm, handleChange, searchBook}) {
                         <label htmlFor="bookname">Book</label>
                         <InputText id="bookname" type="text" value={searchTerm} onChange={(event) => handleChange(event.target.value)}/>
                 </div>
-                <div className="p-d-flex p-jc-end">
+                <div className="p-d-flex p-jc-end search-container">
                         <Button label="Search" icon="pi pi-search" className="gb-btn-search" onClick={searchBook} />
                 </div>
             </form>

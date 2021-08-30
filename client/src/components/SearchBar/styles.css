@@ -18,3 +18,9 @@
         inset 0 0 0 1px var(--cyan-600);
     border-color: var(--cyan-600);
 }
+
+@media screen and (min-width: 768px) {
+    .search-container {
+        margin-right: 1.5rem;
+    }
+}

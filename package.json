@@ -14,6 +14,10 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/crrmarchese/google-books-search-react.git"

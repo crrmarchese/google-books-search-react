@@ -1,0 +1,38 @@
+{
+  "name": "google-books-search-react",
+  "version": "1.0.0",
+  "description": "Create a React-based Google Books Search app using React components, work with helper/util functions and utilize React lifecycle methods to query and display books based on user searches. Users can save books to review or purchase later.",
+  "main": "./server/server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node server/scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crrmarchese/google-books-search-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crrmarchese/google-books-search-react/issues"
+  },
+  "homepage": "https://github.com/crrmarchese/google-books-search-react#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
